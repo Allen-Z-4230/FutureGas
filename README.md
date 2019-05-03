@@ -45,3 +45,40 @@ Make sure you are running in your conda environments with all of the required pa
 ```
 jupyter notebook
 ```
+
+## Version Control Workflow
+Here's how to start making changes and incorporating them into the project:
+
+1. Get the latest version of master
+   ```
+   git checkout master
+   git pull origin master
+   ```
+2. Switch to a new, appropriately-named branch
+    ```
+    git checkout -b {your first name}/{branch name}
+    ```
+
+    For example, if bob wants to add new news data:
+    ```
+    git checkout -b bob/add_news_data
+    ```
+
+3. Make your changes on this branch, commiting and pushing your work to your branch only.
+   
+   ```
+   git add {changed files}
+   git commit -m "Meaningful message about my changes"
+   git push origin {your first name}/{branch name}
+   ```
+4. Once you are sure you want to add your changes to master, first pull the latest version of master and make sure all of your code still works. 
+    ```
+    git pull origin master
+    ```
+
+5. Once you have pulled in the latest changes from master, push to your branch again.
+6. Submit a Pull Request on Github for your branch to merge into master and request a reviewer.
+7. Merge the branch into master from Github once somebody has reviewed your changes.
+
+
+Note that you should never have to run the command `git push origin master`.
