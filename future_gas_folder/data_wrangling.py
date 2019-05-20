@@ -26,5 +26,3 @@ df_gas['Date'] = pd.to_datetime(df_gas.Date)
 df_dji['Date'] = pd.to_datetime(df_dji.Date)
 df_sp500['Date'] = pd.to_datetime(df_sp500.Date)
 df_nas['Date'] = pd.to_datetime(df_nas.Date)
-
-print(len(df_gas),len(df_dji), len(df_sp500), len(df_nas))
